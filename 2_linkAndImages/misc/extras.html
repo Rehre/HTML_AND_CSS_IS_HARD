@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extras</title>
+  </head>
+  <body>
+    <h1>Extras</h1>
+    <p>This example is about links and <a>images</a></p>
+    <!-- links.html and images.html is one level above this files(or on the parent) -->
+    <!-- this should not work and server will response with not found error -->
+    <p>
+      This page is about miscellaneous HTML things, but you may also be
+      interested in (links should not work) <a href="links.html">links</a> or
+      <a href="images.html">images</a>.
+    </p>
+    <!-- this should work because we are referencing parent folder first with ".." -->
+    <p>
+      This page is about miscellaneous HTML things, but you may also be
+      interested in (link should work because we are using parent reference)
+      <a href="../links.html">links</a> or <a href="../images.html">images</a>.
+    </p>
+    <!-- root relative links, this will reference "website-domain/links.html" and "website-domain/images.html" -->
+    <p>
+      This page is about miscellaneous HTML things, but you may also be
+      interested in (depends on the server this could be work or not)
+      <a href="/links.html">links</a> or <a href="/images.html">images</a>.
+    </p>
+
+    <h2>Character Encoding</h2>
+    <p>You can use UTF-8 to count in Turkish:</p>
+    <p>
+      Try removing the &lt;meta charset="UTF-8"/&gt; in this file to see the
+      difference
+    </p>
+    <ol>
+      <li>bir</li>
+      <li>iki</li>
+      <li>üç</li>
+      <li>dört</li>
+      <li>beş</li>
+    </ol>
+
+    <p>
+      If you&rsquo;re into &ldquo;web typography,&rdquo; you&rsquo;ll also find
+      yourself using curly quotes quite a bit using HTML Entities
+    </p>
+  </body>
+</html>
