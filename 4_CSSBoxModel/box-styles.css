@@ -34,7 +34,7 @@ strong {
 
 strong {
   /* padding: 50px; padding works as usual*/
-  /* inline element ignore vertical padding */
+  /* inline element ignore vertical margin */
   margin: 50px;
 }
 
@@ -47,6 +47,6 @@ div {
   border: 2px solid #5d6063;
   border-radius: 5px;
   width: 200px;
-  box-sizing: border-box; /* Add this */
-  margin: 20px auto; /* Vertical  Horizontal */
+  box-sizing: border-box;
+  margin: 20px auto; /* Vertical and Center Horizontal */
 }
