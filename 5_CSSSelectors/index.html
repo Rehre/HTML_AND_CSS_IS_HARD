@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- URL FRAGMENT -->
+    <!-- jump to element with id button-2 from the same page -->
+    <a href="#button-2">Go to Button Two</a>
+    <!-- jump to element with id button-2 in index.html from a different page -->
+    <a href="index.html#button-2">Go to Button Two</a>
+
     <div class="page">
       <h1>CSS Selectors</h1>
 
@@ -21,8 +27,10 @@
         to style.
       </p>
 
-      <div class="button">Button One</div>
-      <div class="button call-to-action">Button Two</div>
+      <a class="button" href="nowhere.html">Button One</a>
+      <a id="button-2" class="button call-to-action" href="nowhere.html"
+        >Button Two</a
+      >
     </div>
   </body>
 </html>
