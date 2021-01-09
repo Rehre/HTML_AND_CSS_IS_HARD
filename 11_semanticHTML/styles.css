@@ -1,0 +1,13 @@
+.page {
+  width: 600px;
+  margin: 0px auto;
+}
+
+section,
+article,
+aside,
+footer,
+header,
+nav {
+  display: block;
+}
